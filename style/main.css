@@ -1,0 +1,75 @@
+body{
+	min-width: 700px;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+	/*取消连接的下划线*/
+	color:black;
+}
+
+header{
+	width: 100%;
+	height: 90px;
+}
+
+.head-span{
+	height: 70px;
+	float:right;
+	width: 130px;
+	margin-right: 10%;
+	font-size: 23px;
+	padding-top: 20px;
+	color: black;
+}
+span img{
+	width: 28px;
+	height: 28px;
+}
+ul li ul{
+	display: none;
+}
+
+ul li:hover ul{
+    display: block;
+}
+/*span span{
+	vertical-align: 6px;
+}*/
+
+#nav{
+	float: right;
+}
+.head-span ul{
+	list-style: none;
+	color:black;
+}
+
+#content{
+	/*text-align: center;
+	vertical-align: center;*/
+	height: 360px;
+	width: 100%;
+	min-width: 700px;
+	/*border: black 1px solid;*/
+}
+img.videoImg{
+	position: relative;
+	display: inline-block;
+	margin-left: 30%;
+	min-width: 300px;
+}
+table{
+	position: relative;
+	display: inline-block;
+	left: 10px;
+	top:-30%;
+}
+footer{
+	width: 30%;
+	margin-left: 40%;
+	margin-top: 30px;
+}

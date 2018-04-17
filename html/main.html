@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户界面</title>
+	<link rel="stylesheet" type="text/css" href="../style/main.css">
+	<script type="text/javascript">
+		var ele = document.getElementsByTagName("table")[0];
+		console.log(ele.width);
+	</script>
+</head>
+<body>
+	<header>
+			<span class="head-span">
+				
+				<ul id = "nav">
+					<li>
+						个人中心
+						<ul>
+							<li>
+								<a href="#">联系方式</a>
+							</li>
+							<li>
+								<a href="addFace.html">人脸图片</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<img src = "../img/user1.png">
+			</span>
+	</header>
+	<hr>
+	<div id = "content">
+		<img src="../img/video1.jpg" class = "videoImg">
+		<table>
+			<tr>
+				<th>温度</th>
+    			<th>10</th>
+    		</tr>
+			<tr>
+				<th>湿度</th>
+    			<th>20</th>
+    		</tr>
+    		<tr>
+				<th>CO浓度</th>
+    			<th>20</th>
+    		</tr>
+		</table>
+	</div>
+	<footer>
+		<button id = "saveVideo">保存视频</button>&emsp;&emsp;
+		<button id = "showVideo">查看视频</button>
+	</footer>
+</body>
+</html>

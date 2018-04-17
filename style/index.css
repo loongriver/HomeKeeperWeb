@@ -1,0 +1,21 @@
+
+form{
+	width: 300px;
+	height: 200px;
+	/*border:black 1px solid ;*/
+	margin:  auto;
+	margin-top: 150px;
+
+}
+label {
+    min-width: 70px;
+    float: left;
+    display: block;
+    margin-right: 5px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+button{
+	margin-left: 40%;
+}
