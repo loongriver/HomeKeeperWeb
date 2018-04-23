@@ -2,11 +2,49 @@
 <html>
 <head>
 	<title>添加人脸识别图片</title>
+	<link rel="stylesheet" type="text/css" href="../style/addFace.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" ></script>
+
+	
 </head>
 <body>
-	<label class="ui_button ui_button_primary" for="xFile">上传文件</label>
-	<form>
-		<input type="file" id="xFile" style="position:absolute;clip:rect(0 0 0 0);">
-	</form>
+
+	<content>
+		<label for="img_input" id = "label_input">选择图片</label>
+		<input id="img_input" type="file" accept="image/*"/>
+		<!-- 选择图片 -->
+
+		<!-- 图片预览以及删除 -->
+		<div class="preview">
+			<div class = "preview_box">
+				<img src = "../img/user.png">
+				<label>请输入人名：</label>
+				<input class = "img_name" type = "text">
+				<button class = "delete_img">删除图片</button>
+			</div>
+
+			<div class = "preview_box">
+				<img src = "../img/user.png">
+				<label>请输入人名：</label>
+				<input class = "img_name" type = "text">
+				<button class = "delete_img">删除图片</button>
+			</div>
+
+		</div>
+
+		<button>上传人脸图片</button>
+
+		<!-- 显示已添加的人脸图片 -->
+		<button>查看人脸图片</button>
+		<!-- <div class = "show_img">
+			<div>
+				<img src = "">
+				<button>删除图片</button>
+			</div>
+		</div> -->
+	</content>
+
+
+	<script src="../js/addFace.js"> </script>
 </body>
 </html>
