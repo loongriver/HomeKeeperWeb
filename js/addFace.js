@@ -22,15 +22,23 @@ $("#img_input").change(function(e){
     // 渲染文件
     reader.onload = function(arg) {
         
-        var img = '<img class="preview" src="' + arg.target.result + '" alt="preview"/>';
+        var img = '<img src="' + arg.target.result + '">';
+        var div = '<div class = "preview_box">'+img +
+        '<label>请输入人名：</label><input class = "img_name" type = "text">'+
+        '<button class = "delete_img button green">删除图片</button></div>'
         //$(".preview_box").empty().append(img);
-        $(".preview").append(img);
+        $(".preview").append(div);//将图片添加到html文档里
+
+        addEvent();//给删除图片按钮添加事件
     }
 })
 
-$(".delete_img").click(function(e){
-    // alert("true");
-    //$(".preview_box").remove();
-    alert($(this).parent().html());
-    $(this).parent().remove();
-})
+function addEvent(){
+    $(".delete_img").click(function(e){
+        // alert("true");
+        //$(".preview_box").remove();
+        alert($(this).parent().html());
+        $(this).parent().remove();
+    })
+}
+

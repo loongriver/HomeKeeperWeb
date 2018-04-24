@@ -2,6 +2,11 @@
     padding: 0px;
     margin: 0px;
 }
+#content{
+    display: block;
+    width: 100%;
+    padding-top:30px;  
+}
 
 .preview{
     width:80%;
@@ -11,7 +16,7 @@
 .preview_box{
     display: inline-block;
     width: 200px;
-    height: 270px;
+    height: 300px;
     border:1px solid black;
 }
 .preview_box img {
@@ -28,6 +33,27 @@
     background-color:  #f2d547;
     padding:5px;
     margin: auto;
-    
+}
 
+/*
+*删除图片按钮
+*/
+button.delete_img{
+    margin-top: 5px;
+    margin-left:20%;
+}
+.img_name{
+    width:40%;
+}
+
+/* 上传图片按钮 */
+button#upload_img{
+    display: block;
+    margin: auto;
+}
+
+/* 查看图片按钮 */
+button#show_img{
+    display: block;
+    margin: auto;
 }
