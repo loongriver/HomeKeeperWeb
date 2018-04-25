@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>添加人脸识别图片</title>
 	<link rel="stylesheet" type="text/css" href="../style/button.css">
 	<link rel="stylesheet" type="text/css" href="../style/addFace.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" ></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 </head>
+
 <body>
 
-	<content id = "content">
+	<content id="content">
 		<!-- 选择图片 -->
-		<label for="img_input" id = "label_input" class = "button">选择图片</label>
-		<input id="img_input" type="file" accept="image/*"/>
+		<form id="img_form" enctype="multipart/form-data" method="POST">
+			<label for="img_input" id="label_input" class="button">选择图片</label>
+			<input id="img_input" type="file" accept="image/*" />
+		</form>
 
 		<!-- 图片预览以及删除 -->
 		<div class="preview">
@@ -23,10 +27,11 @@
 			</div> -->
 		</div>
 
-		<button class = "button green" id = "upload_img"> 上传人脸图片</button>
+		<button class="button green" id="upload_img"> 上传人脸图片</button>
 		<br>
+
 		<!-- 显示已添加的人脸图片 -->
-		<button class = "button green" id = "show_img">查看人脸图片</button>
+		<button class="button green" id="show_img">查看人脸图片</button>
 		<!-- <div class = "show_img">
 			<div>
 				<img src = "">
@@ -38,4 +43,5 @@
 
 	<script src="../js/addFace.js"> </script>
 </body>
+
 </html>
