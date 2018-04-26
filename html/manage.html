@@ -8,128 +8,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../style/manage.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/button.css" />
     <script src="../js/manage.js"></script>
 </head>
 
 <body>
-    <!-- <button class = "button" id = "add_user">添加用户</button>
-    <button class = "button" id = "amend_info">修改用户信息</button> -->
+    <div id="header">
+        <input type="text" id="search_input" placeholder="请输入用户名">
+        <button class="button" onclick="search()" id = "search_button">搜索用户</button>
+    </div>
 
-    <input type="text" id="search" placeholder="请输入用户名">
-    <label for="search">搜索用户</label>
-    <!-- 
-    <table id="mytable" align="center">
-        <caption>用户列表</caption>
-        <tr>
-            <th>Month</th>
-            <th>Savings</th>
-            <th>
-                <button>删除</button>
-            </th>
-        </tr>
-    </table>
-
-
-    <a id="btn0"></a>
-    <input id="pageSize" type="text" size="1" maxlength="2" value="getDefaultValue()" />
-    <a> 条 </a>
-    <a href="#" id="pageSizeSet">设置</a>&nbsp;
-    <a id="sjzl"></a>&nbsp;
-    <a href="#" id="btn1">首页</a>
-    <a href="#" id="btn2">上一页</a>
-    <a href="#" id="btn3">下一页</a>
-    <a href="#" id="btn4">尾页</a>&nbsp;
-    <a>转到&nbsp;</a>
-    <input id="changePage" type="text" size="1" maxlength="4" />
-    <a>页&nbsp;</a>
-    <a href="#" id="btn5">跳转</a> -->
-
-    <div style="width: 800px;">
+    <div style="width: 700px;">
         <div class="table-head">
             <table>
                 <colgroup>
                     <col style="width: 80px;" />
                     <col />
+                    <col style="width: 150px;" />
+                    <col />
                 </colgroup>
                 <thead>
                     <tr>
                         <th>序号</th>
-                        <th>内容</th>
+                        <th>用户名</th>
+                        <th>操作</th>
                     </tr>
                 </thead>
             </table>
         </div>
-        <div class="table-body">
+        <div class="table-body" id="table_content">
             <table>
                 <colgroup>
                     <col style="width: 80px;" />
                     <col />
+                    <col style="width: 150px;" />
+                    <col />
                 </colgroup>
                 <tbody>
-                    <tr>
+                    <tr id="check_height">
                         <td>1</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">user</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>12</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">user1</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>13</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>14</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                     <tr>
                         <td>15</td>
-                        <td>我只是用来测试的</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="user">我只是用来测试的</td>
+                        <td>
+                            <button>编辑</button>
+                        </td>
+
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+
+    <div id="footer">
+        <form>
+            <label for = "username">用户名:</label><input type="text" name="username"><br><br>
+            <label for = "passwd">密&emsp;码:</label><input type="text" name="passwd"><br><br>
+            <button class = "button" id = "add_user">添加用户</button>
+        </form>
+    </div>
+
 </body>
 
 </html>
